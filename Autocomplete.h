@@ -16,6 +16,6 @@ public:
     };
     
     std::vector<std::string> getSuggestions(std::string partialWord);  // return the known words that start with partialWord
-    void suggestionsRec(std::vector<std::string> vect, Autocomplete* pCrawl, std::string partialWord); //recursion
+    void suggestionsRec(std::vector<std::string> &vect, Autocomplete* pCrawl, std::string partialWord); //recursion
     void insert(std::string word); // add a word to the known words
 };
