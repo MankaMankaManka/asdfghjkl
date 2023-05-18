@@ -37,7 +37,7 @@ void Autocomplete::insert(std::string word){
   
   Autocomplete* pCrawl = this;
  
-    for (int level = 0; level < word.length(); level++) 
+    for (int level = 0; level < word.size(); level++) 
     {
         // Converts word current character into index
         // use only 'a' through 'z' and lower case
