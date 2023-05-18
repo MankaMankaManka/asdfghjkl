@@ -1,7 +1,7 @@
 #include "Autocomplete.h"
 
 std::vector<std::string> Autocomplete::getSuggestions(std::string partialWord){
-    std::vector<std::string> vect(10);
+    std::vector<std::string> vect;
     
     Autocomplete* pCrawl = this;
     for (char c : partialWord) {
