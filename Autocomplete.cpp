@@ -29,7 +29,7 @@ void Autocomplete::suggestionsRec(std::vector<std::string> &vect, Autocomplete* 
     }
 }
 
-
+ 
 void Autocomplete::insert(std::string word){
   
   Autocomplete* pCrawl = this;
