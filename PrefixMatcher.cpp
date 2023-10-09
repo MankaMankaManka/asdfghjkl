@@ -22,7 +22,7 @@ int PrefixMatcher::selectRouter(std::string networkAddress){
         }
     }
     int vSize=vect.size();
-    int final = vect[vSize];
+    int final = vect[vSize-1];
     return final;
 }
 
