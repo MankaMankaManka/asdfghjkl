@@ -1,3 +1,5 @@
+#ifndef AUTOCOMPLETE_H
+#define AUTOCOMPLETE_H
 #include <iostream>
 #include <vector>
 class Autocomplete
@@ -19,3 +21,5 @@ public:
     void suggestionsRec(std::vector<std::string> &vect, Autocomplete* pCrawl, std::string partialWord); //recursion
     void insert(std::string word); // add a word to the known words
 };
+
+#endif
