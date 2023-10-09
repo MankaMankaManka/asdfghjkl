@@ -6,6 +6,7 @@ int PrefixMatcher::selectRouter(std::string networkAddress){  // return the rout
     PrefixMatcher* pCrawl = this;
     int index;
     std::vector<int> vect;
+    vect.push_back(-1);
     //call a function that tests if the pcrawl is equal to the adress bit at the level. for example
     // if target adress is 5 digits long, check if a network is 1 digit long, then 2, then 3 then 4 
     //then 5, then return the last number that matched
