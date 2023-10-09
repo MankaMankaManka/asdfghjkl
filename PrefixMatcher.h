@@ -1,5 +1,6 @@
 #ifndef PREFIXMATCHER_H
 #define PREFIXMATCHER_H
+
 #include <iostream>
 #include <vector>
 class PrefixMatcher
@@ -7,11 +8,12 @@ class PrefixMatcher
 public:
     PrefixMatcher* children[2];
     bool isWordEnd;
-    int number = -1;
+    int number;
     
     PrefixMatcher()
     {
         this->isWordEnd = false;
+        this->number = -1;
  
         for (int i = 0; i < 2; i++) {
             this->children[i] = nullptr;
@@ -22,5 +24,4 @@ public:
     void insert(std::string address, int routerNumber);
     
 };
-
 #endif
